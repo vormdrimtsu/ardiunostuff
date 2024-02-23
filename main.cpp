@@ -33,3 +33,13 @@ void PaperSignals::MoveServoToPosition(int position, int speed)
       myservo.write(i);
       delay(speed);
     }
+//add later
+  }
+  else if(position > currentServoPosition)
+  {
+    for(int i = currentServoPosition; i < position; i++)
+    {
+      myservo.write(i);
+      delay(speed);
+    }
+  }
