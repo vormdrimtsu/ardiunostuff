@@ -17,7 +17,7 @@ String urlencode(String str)
             code1=(c & 0xf) - 10 + 'A';
         }
 
-
+//not here
 void PaperSignals::StartUp()
 {
   myservo.attach(SERVO_PIN);
